@@ -15,7 +15,7 @@ Boilerplate to easily get you started with <a href="https://bun.sh">Bun</a> and 
 
 #### Usage
 
-1. Clone this reposioty
+1. Clone this repository
 2. Install dependencies: `bun install`
 
 #### Commands
@@ -37,3 +37,31 @@ bun start
 ```bash
 bun start:dev
 ```
+
+🦊 Elysia is running at localhost:3000
+
+> PS: Bun uses `3000` as default port
+
+#### Run app in Docker
+
+###### Build docker image
+
+```bash
+docker build -t <TAG_NAME> .
+```
+
+###### Running container
+
+```bash
+docker run -p <PORT>:<PORT> <TAG_NAME>
+```
+
+### OR
+
+###### Run with docker-compose
+
+```bash
+docker compose up --build -d
+```
+
+> PS: You have to define PORT in your .env file
