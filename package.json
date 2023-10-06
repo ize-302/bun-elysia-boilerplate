@@ -1,0 +1,28 @@
+{
+  "name": "bun-elysia-boilerplate",
+  "type": "module",
+  "scripts": {
+    "start": "bun run build && bun run dist/server.js",
+    "start:dev": "bun --hot src/server.ts",
+    "build": "rm -rf ./build && bun build --target=bun ./src/server.ts --outdir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ize-302/bun-elysia-boilerplate.git"
+  },
+  "author": "Adavize Hassan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ize-302/bun-elysia-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ize-302/bun-elysia-boilerplate#readme",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "elysia": "^0.7.15"
+  }
+}
